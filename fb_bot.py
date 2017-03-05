@@ -30,7 +30,7 @@ time.sleep(5)
  
 driver.get("https://www.facebook.com/events/birthdays")
  
-box_count = len(driver.find_elements_by_class_name("innerWrap"))
+box_count = len(driver.find_element_by_class_name("innerWrap"))
  
 for x in range(0, box_count):
 	text_box = driver.find_element_by_tag_name('textarea')
